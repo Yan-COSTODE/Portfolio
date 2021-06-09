@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/carou.css">
+    <link rel="shortcut icon" href="./assets/pictures/logo-light.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- Menu -->
+    <header>
+      <a href=""><img src="./assets/pictures/logo-light.png" alt="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="#Presentation">Présentation</a></li>
+          <li><a href="#Réalisations">Réalisations</a></li>
+          <li><a href="#Formulaire">Formulaire</a></li>
+          <li><a href="#Réseaux">Réseaux</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Video in background with overlay text -->
+      <section>
+        <div class="movie">
+          <video autoplay muted loop id="myVideo">
+            <source src="./assets/movie/MovieBackground.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- Text over background movie -->
+        <div class="movieText">
+          <h1>Mon Portfolio</h1>
+          <p>Le résumé de mon experience professionnel et personnel dans les différents domaines que j'apprécie</p>
+          <a href="http://www.github.com/Yan-COSTODE" target="_blank" class="button">Plus d'infos</a>
+        </div>
+      </section>
+      <!-- Presentation section with text over image -->
+      <section id="Presentation">
+        <div id="mainPresentation">
+          <div class="presentationText">
+            <h2>Tout ce qu'il faut savoir sur moi</h2>
+            <pre>En tant qu'élève de première année en DUT Informatique à Limoges, je suis une personne qui aime apprendre constamment de nouvelles choses.
+J'ai décidé de travailler dans l'informatique car ce domaine est en constante évolution, de plus j'ai aussi décidé d'aller dans ce domaine car
+j'aime le monde du jeu vidéo et je veux trouver ma place dans ce domaine. Le travail en équipe est quelque chose que j'apprécie, mais
+je peux également travailler indépendament. Je m'accoutume rapidement, je suis sérieux et j'écoute tout les conseils que je peux recevoir et
+je le met en place afin de ne plus refaire la même erreur.</pre>
+            <p><a class="myButton" target="_blank" href="CV_Fr.pdf">Voir le CV</a></p>
+          </div>
+          <img src="./assets/pictures/me.png" alt="me" class="photo">
+        </div>
+      </section>
+      <!-- Carousel with all work -->
+      <section id="Réalisations">
+        <div class="carousele">
+          <select class="selectTravail" name="travailSelect" onchange="myFunction()">
+            <option value="Dessin">Dessin</option>
+            <option value="Blender">Blender</option>
+            <option value="Unreal">Unreal Engine</option>
+            <option value="Unity">Unity</option>
+            <option value="Web">Site Web</option>
+          </select>
+             <section class="carousel" aria-label="Gallery">
+               <div class="Dessin">
+                 <div class="slider-container">
+                     <div class="slider-content">
+                         <div class="slider-single">
+                             <img class="slider-single-image" src="./assets/pictures/Illustrations/Dessin1.jpg" alt="1" />
+                             <h1 class="slider-single-title">Teemo Astronaute</h1>
+                         </div>
+                         <div class="slider-single">
+                             <img class="slider-single-image" src="https://picsum.photos/id/974/200/300" alt="2" />
+                             <h1 class="slider-single-title">Through the Mountains</h1>
+                         </div>
+                         <div class="slider-single">
+                             <img class="slider-single-image" src="https://picsum.photos/id/974/200/300" alt="2" />
+                             <h1 class="slider-single-title">Through the Mountains</h1>
+                         </div>
+                     </div>
+                 </div>
+               </div>
+             </section>
+        </div>
+      </section>
+      <!-- Contact Form -->
+      <section id="Formulaire">
+        <div class="formulaire contact">
+          <h1>Contactez-moi</h1>
+          <form class="form" action="#" method="post">
+            <label for="nom">Nom <em>&#x2a;</em> :</label>
+            <input type="text" name="nom" value="" placeholder="NOM" required>
+            <label for="nom">Prénom <em>&#x2a;</em> :</label>
+            <input type="text" name="prenom" value="" placeholder="Prénom" required>
+            <label for="nom">Email <em>&#x2a;</em> :</label>
+            <input type="email" name="email" value="" placeholder="example@mail.com" required>
+            <label for="nom">Téléphone <em>&#x2a;</em> :</label>
+            <input type="tel" name="num" value="" pattern="[0-9]{10}" placeholder="0666666666" required>
+              <br>
+              <i><em>&#x2a;</em> Champs Obligatoires</i>
+            <button type="submit" name="button">Envoyer</button>
+          </form>
+        </div>
+      </section>
+      <!-- Link to Network -->
+      <section id="Réseaux">
+        <div class="reseau">
+          <a href="https://www.linkedin.com/in/yan-costode-1432221b9/" target="_blank"><img src="./assets/pictures/linkedin.png" alt="linkedin" class="resIco"></a>
+          <a href="http://www.github.com/Yan-COSTODE" target="_blank"><img src="./assets/pictures/github.png" alt="github" class="resIco"></a>
+          <a href="https://www.instagram.com/yancostode/" target="_blank"><img src="./assets/pictures/instagram.png" alt="instagram" class="resIco"></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="foot">
+          <hr class="hr">
+          &copy; Developed by
+          <a href="http://www.github.com/Yan-COSTODE" target="_blank" class="white-text">Yan Costode</a>
+      </div>
+    </footer>
+  </body>
+  <script src="./assets/js/carou.js"></script>
+</html>
